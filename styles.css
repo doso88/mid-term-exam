@@ -15,7 +15,536 @@ ul{
     list-style-type: none;
     text-decoration: none;
 }
+li :hover{
+    text-decoration: underline 3px solid green;
+
+}
 a{
     text-decoration: none;
     color: black;
+}  
+.navigation{
+    max-width: 1400px;
+    max-height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    margin: 0 auto;
+}
+.logo-size{
+    width: 48px;
+    height: 48px;
+}
+.header-button{
+    width: 100px;
+    height: 40px;
+    align-content: center;
+    border-radius: 14px;
+    background-color: #29B24E;
+    border: none;
+}
+.nav{
+    width: 370px;
+    height: 25px;
+    justify-content: space-between;
+}
+.search{
+    display: none;
+}
+@media (max-width:430px) {
+    .nav{
+        display: none;
+    }
+    .header-button{
+        display: none;
+    }
+    .search{
+        display: inline-block;
+        width:30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: white;
+        padding-top: 6px;
+        padding-left: 6px;
+    }
+}
+/*main styles*/
+.location-background{
+    max-width: 1400px;
+    max-height: 751px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+.location{
+    max-width: 400px;
+    height: 730px;
+    background-color: white;
+    border-radius: 13px;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.territory{
+    flex-direction: column;
+    gap: 20px;
+}
+.title-16px{
+    font-size: 16px;
+}
+.kenya{
+    width: 331px;
+    height: 48px;
+    border-radius: 13px;
+    border: none;
+    padding-right: 235px;
+}
+.property{
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 5px;
+}
+.checkbox{
+    align-items: center;
+}
+.tick{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+.price-range{
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 5px;
+}
+.background{
+    position: relative;
+}
+.city{
+    max-width: 950px;
+    height: 730px;
+    border-radius: 13px;
+}
+.background-text{
+    flex-direction: column;
+    position: absolute;
+    width: 600px;
+    top: 60px;
+    align-items: center;
+    gap:15px;
+    left: 170px;
+}
+h1{
+    font-size: 38px;
+}
+.search-tab{
+    width: 324px;
+    height: 38px;
+    border-radius: 13px;
+    border: none;
+    padding-left: 20px;
+}
+.grey-text{
+    color: grey;
+    font-size: 14px;
+}
+@media (max-width:770px) {
+    .location-background{
+        flex-direction: column-reverse;
+        max-height: 1500px;
+        gap: 15px;
+    }
+    .city{
+        width: 768px;
+        height: 650px;
+    }
+    .background-text{
+        left: 90px;
+    }
+    .location{
+       max-width: 768px;
+       height: 751px;
+        padding-left: 225px;
+    }
+}
+@media (max-width:430px) {
+    .search-tab{
+        display: none;
+    }
+    .city{
+        width: 401px;
+        height: 401px;
+        margin-left: 12px;
+    }
+    .background-text{
+        top: 20px;
+        left: -90px;
+    }
+    h1{
+        font-size: 20px;
+        width: 210px;
+        align-content: center;
+    }
+    .res-size{
+        font-size: 15px;
+    }
+    .location{
+        width: 425px;
+        padding-left: 15px;
+    }
+}
+@media (max-width:380px) {
+    .city{
+        width: 361px;
+        height: 361px;
+        margin-left: 6px;
+    }
+    .background-text{
+        left: -110px;
+    }
+}
+/*card-styles*/
+.trending-ads{
+    max-width: 1400px;
+    margin: 40px auto;
+    flex-direction: column;
+    gap: 15px;
+}
+.title-18px{
+    font-size: 18px;
+    width: 150px;
+}
+.ads-box{
+    justify-content: space-between;
+    gap: auto;
+}
+.apartment-img{
+    width: 300px;
+    height: 200px;
+    border-radius: 13px;
+}
+.apartment-description{
+    background-color: white;
+    border-radius: 13px;
+    width: 330px;
+    flex-direction: column;
+    position: relative;
+    padding: 15px 15px 10px;
+}
+.vip{
+    width: 80px;
+    height: 25px;
+    align-content: center;
+    border: none;
+    border-radius: 13px;
+    background-color: green;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 15px;
+    top: 195px;
+}
+.bookmark{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 205px;
+    right: 25px;
+}
+.apartment-title{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.price-month{
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.price{
+    font-size: 20px;
+    color: green;
+}
+.apartment-details{
+    border-top: 2px solid rgb(188, 181, 181);
+    padding-top: 5px;
+    justify-content: space-between;
+    font-size: 14px;
+}
+@media (max-width:770px) {
+    .title-18px{
+        padding-left: 25px;
+    }
+    .ads-box{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 15px;
+    }
+}
+footer{
+    height: 130px;
+    background-color: #29B24E;
+    border-radius: 13px;
+}
+.footer-nav{
+    max-width: 1400px;
+    width: 100%;
+    margin: 15px auto;
+    color: white;
+}
+.footer-top{
+    justify-content: space-between;
+}
+.top-nav{
+    gap: 15px;
+}
+.top-nav a{
+    color: white;
+}
+.footer-bottom{
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid rgb(188, 181, 181);
+    margin-top: 23px;
+    padding-top: 15px;
+}
+@media (max-width:770px) {
+    footer{
+        height: 220px;
+    }
+    .footer-top{
+        justify-content: space-around;
+    }
+    .roberts{
+        display: none;
+    }
+    .top-nav{
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+/*car-page-style*/
+.app-large{
+    max-width: 1400px;
+    margin: 50px auto;
+    justify-content: space-between;
+}
+.white-house-large{
+    width: 685px;
+    height: 750px;
+    border-radius: 13px;
+}
+.app-large-text{
+    border-radius: 13px;
+    background-color: white;
+    flex-direction: column;
+    width: 685px;
+    height: 750px;
+    padding: 15px 15px 15px;
+}
+.white-house-details{
+    flex-direction: column;
+}
+.vip-view{
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.vip-whitehouse{
+    width: 100px;
+    height: 30px;
+    border-radius: 13px;
+    border: none;
+    background-color: green;
+}
+.view{
+    width:100px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.title-22px{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.lorem{
+    font-size: 14px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 620px;
+}
+.details-2bdrm{
+    border-top: 2px solid rgb(188, 181, 181);
+    border-bottom: 2px solid rgb(188, 181, 181);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.prop-column{
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.prop-column-first{
+    flex-direction: column;
+    gap: 10px;
+}
+.title-14px{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.prop-column-second{
+    flex-direction: column;
+}
+.facilities{
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+.book{
+    border-top: 2px solid rgb(188, 181, 181);
+    padding-top: 20px;
+    margin-top: 60px;
+    padding-left: 40px;
+    justify-content: space-between;
+}
+.price-28px{
+    font-size: 28px;
+    color: green;
+}
+.messege-call{
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
+}
+.sent{
+    width: 153px;
+    height: 38px;
+    border-radius: 13px;
+    border: 1px solid green;
+    background-color: white;
+    color: green;
+}
+.call{
+    width: 80px;
+    height: 38px;
+    border-radius: 13px;
+    border: none;
+    background-color: green;
+    color: white;
+}
+@media (max-width:770px) {
+    .app-large{
+        flex-direction: column;
+        gap: 10px;
+        width: 685px;
+        margin: 15 auto;
+    }
+}
+@media (max-width:430px) {
+    .navigation{
+        display: none;
+    }
+    .app-large{
+        width: 400px;
+        margin-top: 10px;
+    }
+    .white-house-large{
+        width: 400px;
+        height: 400px;
+    }
+    .app-large-text{
+        width: 400px;
+        height: 1000px;
+    }
+    .lorem{
+        width: 370px;
+    }
+    .book{
+        flex-direction: column;
+        padding-left: 10px;
+    }
+    .big-price{
+        padding-left: 40px;
+    }
+    .messege-call{
+        flex-direction: column;
+        margin-top: 15px;
+        gap: 10px;
+        width: 340px;
+    }
+    .sent{
+        width: 330px;
+        height: 47px;
+    }
+    .call{
+        width: 330px;
+        height: 47px;
+    }
+}
+@media (max-width:380px) {
+    .app-large{
+        width: 360px;
+    }
+    .white-house-large{
+        width: 360px;
+        height: 360px;
+    }
+    .app-large-text{
+        width: 360px;
+        height: 1100px;
+    }
+    .lorem{
+        width: 330px;
+    }
+    .details-2bdrm{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .messege-call{
+        width: 310px;
+    }
+    .sent{
+        width: 300px;
+        height: 47px;
+    }
+    .call{
+        width: 300px;
+        height: 47px;
+    }
+}
+.mobile{
+    display: none;
+}
+@media (max-width:430px) {
+    footer{
+        margin-bottom: 30px;
+    }
+    .mob-nav{
+        width: 425px;
+        height: 100px;
+    }
+    .mobile{
+        display: inline;
+    }
+}
+@media (max-width:380px) {
+    footer{
+        margin-bottom: 30px;
+    }
+    .mob-nav{
+        width: 375px;
+        height: 80px;
+    }
+    .mobile{
+        display: inline;
+    }
 }
