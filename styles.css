@@ -23,7 +23,7 @@ a{
     text-decoration: none;
     color: black;
 }  
-.navigation{
+.nav-igation{
     max-width: 1400px;
     max-height: 100px;
     justify-content: space-between;
@@ -74,7 +74,7 @@ a{
     max-height: 751px;
     flex-direction: row;
     justify-content: space-between;
-    margin: 50px auto;
+    margin: 30px auto;
 }
 .location{
     max-width: 400px;
@@ -534,6 +534,9 @@ footer{
     }
     .mobile{
         display: inline;
+        position: fixed;
+        bottom: -10px;
+        
     }
 }
 @media (max-width:380px) {
